@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"enhance": false,
 		"postcss": true,
@@ -27,12 +27,12 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
-	"appid": "wx59816e87b39b9df2",
+	"appid": "wx5ef95d3ea2ab1e14",
 	"projectname": "storeWeChat",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -50,11 +50,11 @@
 			"current": -1,
 			"list": []
 		},
-		"game": {
+		"plugin": {
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
+		"game": {
 			"current": -1,
 			"list": []
 		},
@@ -64,7 +64,14 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": -1,
+					"name": "商品列表",
+					"pathName": "pages/goods_list/goods_list",
+					"scene": null
+				}
+			]
 		}
 	}
 }

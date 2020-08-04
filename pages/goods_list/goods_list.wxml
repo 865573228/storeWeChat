@@ -1,2 +1,8 @@
-<!--pages/goods_list/goods_list.wxml-->
-<text>pages/goods_list/goods_list.wxml</text>
+<view class="goods_lists" wx:for="{{ goodsLists }}">
+	<image class="goods_img_box" src="{{ item.goods_big_logo }}"></image>
+	<view class="goods_detail">
+		<view class="goods_title">{{ item.goods_name }}</view>
+		<view class="goods_price">{{ item.goods_price }}</view>
+	</view>
+</view>
+
