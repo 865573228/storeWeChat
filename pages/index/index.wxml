@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <searchBar></searchBar>
 <swiper indicator-dots autoplay circular>
     <swiper-item
@@ -7,4 +8,8 @@
           <image mode="widthFix" src="{{item.image_src}}"></image>
         </navigator>
     </swiper-item>
-</swiper>
+</swiper></swiper></swiper></swiper></swiper>
+=======
+<!--index.wxml-->
+
+>>>>>>> d3e3ddba7f3850ab03c11f89ee8bfb0740740b01
