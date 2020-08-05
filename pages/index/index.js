@@ -3,23 +3,30 @@ import {request} from '../../request/index.js'
 Page({
   data: {
     bannerList:[],
-
+    navLists:[],
+    foolLists:[],
   },
   //options(Object)
   onLoad: function(options){
-    // var reqTask = wx.request({
-    //   url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata',
-    //   success: (result)=>{
-    //     console.log(result)
-    //     this.setData({
-    //       bannerList:result.data.message
-    //     })
-    //   }
-    // });
-    request({url:'https://api-hmugo-web.itheima.net/api/public/v1/home/swiperdata'})
+    // 轮播图
+    request({url:'/home/swiperdata'})
     .then(res=>{
       this.setData({
         bannerList:res.data.message
+      })
+    }),
+    // nav
+    request({url:'/home/catitems'})
+    .then(res=>{
+      this.setData({
+        navLists:res.data.message
+      })
+    }),
+    // 楼层
+    request({url:'/home/floordata'})
+    .then(res=>{
+      this.setData({
+        foolLists:res.data.message
       })
     })
   }

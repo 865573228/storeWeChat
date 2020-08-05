@@ -2,3 +2,39 @@ swiper swiper-item navigator image {
   width: 100%;
   height: 340rpx;
 }
+.navLists {
+  display: flex;
+}
+.navLists .box {
+  flex: 1;
+}
+.navLists .box image {
+  width: 100%;
+}
+.fool_box .fool_lists {
+  padding: 10rpx 0;
+}
+.fool_box .fool_lists .fool_title image {
+  width: 100%;
+}
+.fool_box .fool_lists .fool_imgs {
+  overflow: hidden;
+}
+.fool_box .fool_lists .fool_imgs navigator {
+  float: left;
+  width: 33.33%;
+}
+.fool_box .fool_lists .fool_imgs navigator:nth-last-child(-n+4) {
+  /* 原图的的宽高 232*386 */
+  /* 232 / 386 = 33.33vw / height */
+  height: 27.72711207vw;
+  border-left: 10rpx solid #fff;
+}
+.fool_box .fool_lists .fool_imgs navigator:nth-child(2),
+.fool_box .fool_lists .fool_imgs navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.fool_box .fool_lists .fool_imgs navigator image {
+  width: 100%;
+  height: 100%;
+}

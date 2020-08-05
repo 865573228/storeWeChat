@@ -1,15 +1,37 @@
-<<<<<<< HEAD
 <searchBar></searchBar>
 <swiper indicator-dots autoplay circular>
     <swiper-item
-    wx:for="{{ bannerList }}"
-    wx:key="goods_id">
+        wx:for="{{ bannerList }}"
+        wx:key="goods_id">
         <navigator url="{{ item.navigator_url }}">
           <image mode="widthFix" src="{{item.image_src}}"></image>
         </navigator>
     </swiper-item>
-</swiper></swiper></swiper></swiper></swiper>
-=======
-<!--index.wxml-->
-
->>>>>>> d3e3ddba7f3850ab03c11f89ee8bfb0740740b01
+</swiper>
+<view class="navLists">
+  <view class="box"
+    wx:for="{{navLists}}"
+    wx:key="name">
+    <image class="" src="{{ item.image_src }}" mode="widthFix"/>
+  </view>
+</view>
+<view class="fool_box">
+  <view class="fool_lists"
+  wx:for="{{ foolLists }}"
+  wx:key="name">
+    <view class="fool_title">
+      <image mode="widthFix" src="{{ item.floor_title.image_src }}"></image>
+    </view>
+    <view class="fool_imgs">
+      <navigator
+        wx:for="{{ item.product_list }}"
+        wx:for-item="t"
+        wx:for-index="i"
+        wx:key="name"
+        src="{{navigator_url}}">
+        <image mode="{{ i === 0 ? 'widthFix' : 'scaleToFill' }}" src="{{ t.image_src }}"></image>
+      </navigator>
+    </view>
+  </view>
+</view>
+    

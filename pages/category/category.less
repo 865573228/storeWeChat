@@ -1,0 +1,54 @@
+page{
+    .active{
+        color:#fff;
+        font-weight: 500;
+        background:var(--themeColor);
+        border-radius:8rpx;
+    }
+    height:100%;
+    .cates{
+        height:100%;
+        .cates_container{
+            height:~"calc(100vh - 90rpx)";
+            display: flex;
+            // 左侧菜单
+            .left_menu{
+                flex:2;
+                .lists{
+                    text-align: center;
+                    padding:24rpx 0;
+                }
+            }
+            // 右侧内容
+            .right_content{
+                flex:5;
+                .goods_group{
+                    .goods_title{
+                        display:flex;
+                        justify-content: center;
+                        padding:24rpx 0;
+                        .line{
+                            display: inline-block;
+                            color:#999;
+                            padding:0 24rpx;
+                        }
+                    }
+                    .goods_list{
+                        display:flex;
+                        flex-wrap: wrap;
+                        .goods_content{
+                            width:33.33%;
+                            text-align: center;
+                            image{
+                                width: 50%;
+                            }
+                            view{
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

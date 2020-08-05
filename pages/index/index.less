@@ -8,3 +8,46 @@ swiper{
     }
   }
 }
+.navLists{
+  display:flex;
+  .box{
+    flex:1;
+    image{
+      width:100%;
+    }
+  }
+}
+.fool_box{
+  .fool_lists{
+    padding:10rpx 0;
+    .fool_title{
+      image{
+        width: 100%;
+      }
+    }
+    .fool_imgs{
+      overflow: hidden;
+      navigator{
+        float: left;
+        width: 33.33%;
+        // 后四个超链
+        &:nth-last-child(-n+4){
+          /* 原图的的宽高 232*386 */
+          /* 232 / 386 = 33.33vw / height */
+          // 第一张图片的高度height:33.33vh * 386 / 232
+          height:33.33vw * 386 / 232 / 2 ;
+          border-left:10rpx solid #fff;
+          
+        }
+        &:nth-child(2),
+        &:nth-child(3){
+            border-bottom:10rpx solid #fff;
+        }
+        image{
+          width: 100%;
+          height:100%;
+        }
+      }
+    }
+  }
+}
