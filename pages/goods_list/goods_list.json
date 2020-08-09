@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "商品列表",
-  "usingComponents": {}
+  "usingComponents": {
+    "searchBar":"../../components/searchBar/searchBar"
+  }
 }

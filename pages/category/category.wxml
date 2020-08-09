@@ -26,7 +26,8 @@
                     <navigator class="goods_content"
                         wx:for="{{item.children}}"
                         wx:key="cat_id"
-                        wx:for-item="t">
+                        wx:for-item="t"
+                        url="/pages/goods_list/goods_list?cid={{t.cat_id}}">
                         <image mode="widthFix" src="{{t.cat_icon}}"></image>
                         <view >{{t.cat_name}}</view> 
                     </navigator>
